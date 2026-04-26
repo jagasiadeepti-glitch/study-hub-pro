@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Hub Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Study Hub Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#goals">Goals</a></li>
+                <li><a href="#homework">Homework Tracking</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a href="#export">Export Data</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea placeholder="Write your notes here..."></textarea>
+            <button id="save-notes">Save Notes</button>
+        </section>
+        <section id="goals">
+            <h2>Goals</h2>
+            <input type="text" id="goal-input" placeholder="Enter your goal">
+            <button id="add-goal">Add Goal</button>
+            <ul id="goal-list"></ul>
+        </section>
+        <section id="homework">
+            <h2>Homework Tracking</h2>
+            <input type="text" id="homework-input" placeholder="Enter homework task">
+            <button id="add-homework">Add Homework</button>
+            <ul id="homework-list"></ul>
+        </section>
+        <section id="statistics">
+            <h2>Statistics Dashboard</h2>
+            <p id="statistics-data">Here will be the performance statistics.</p>
+        </section>
+        <section id="export">
+            <h2>Export Data</h2>
+            <button id="export-button">Export Data</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Study Hub Pro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
